@@ -15,6 +15,4 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "10.0"
   s.xcconfig      = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
-  s.dependency 'Fuzi', '3.1.2'
-
 end
