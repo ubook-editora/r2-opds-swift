@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03C3CC64222DBD2F00A01731 /* R2Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3CC63222DBD2F00A01731 /* R2Shared.framework */; };
 		111E54DC2021022700A7FE9A /* OPDS2Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E54DB2021022700A7FE9A /* OPDS2Parser.swift */; };
+		1E53D909A7FCFB51CD315F14 /* Pods_readium_opds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D863492D93E6D5B4D580AB3C /* Pods_readium_opds.framework */; };
 		AE49834720D902710013B912 /* ParseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49834620D902710013B912 /* ParseData.swift */; };
 		AE6B98E020CAB93200117197 /* OPDSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B98DF20CAB93200117197 /* OPDSParser.swift */; };
 		AED681F020A316160090DBCD /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED681EF20A316160090DBCD /* URLHelper.swift */; };
@@ -27,7 +28,10 @@
 		AE49834620D902710013B912 /* ParseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseData.swift; sourceTree = "<group>"; };
 		AE6B98DF20CAB93200117197 /* OPDSParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPDSParser.swift; sourceTree = "<group>"; };
 		AED681EF20A316160090DBCD /* URLHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		C6E0AE8DE57E57EFE7401F08 /* Pods-readium-opds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-readium-opds.release.xcconfig"; path = "Target Support Files/Pods-readium-opds/Pods-readium-opds.release.xcconfig"; sourceTree = "<group>"; };
 		CA415EC9221D5182003A0F7F /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
+		D863492D93E6D5B4D580AB3C /* Pods_readium_opds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_readium_opds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DA0F50280305C27BBFF1E6 /* Pods-readium-opds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-readium-opds.debug.xcconfig"; path = "Target Support Files/Pods-readium-opds/Pods-readium-opds.debug.xcconfig"; sourceTree = "<group>"; };
 		F34B7E4D1FA35B7900534FD3 /* ReadiumOPDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadiumOPDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34B7E501FA35B7900534FD3 /* readium_opds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readium_opds.h; sourceTree = "<group>"; };
 		F34B7E511FA35B7900534FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C3CC64222DBD2F00A01731 /* R2Shared.framework in Frameworks */,
+				1E53D909A7FCFB51CD315F14 /* Pods_readium_opds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,15 @@
 			path = Samples;
 			sourceTree = "<group>";
 		};
+		D93BA174CEAAF49B5C9A66BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1DA0F50280305C27BBFF1E6 /* Pods-readium-opds.debug.xcconfig */,
+				C6E0AE8DE57E57EFE7401F08 /* Pods-readium-opds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F34B7E431FA35B7900534FD3 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +79,7 @@
 				F34B7E5A1FA35B7900534FD3 /* readium-opdsTests */,
 				F34B7E4E1FA35B7900534FD3 /* Products */,
 				F34B7E6A1FA35CEA00534FD3 /* Frameworks */,
+				D93BA174CEAAF49B5C9A66BD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				03C3CC63222DBD2F00A01731 /* R2Shared.framework */,
+				D863492D93E6D5B4D580AB3C /* Pods_readium_opds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +144,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F34B7E611FA35B7900534FD3 /* Build configuration list for PBXNativeTarget "readium-opds" */;
 			buildPhases = (
+				A41E574E0FC47B9F07F4EC4F /* [CP] Check Pods Manifest.lock */,
 				F34B7E481FA35B7900534FD3 /* Sources */,
 				F34B7E491FA35B7900534FD3 /* Frameworks */,
 				F34B7E4A1FA35B7900534FD3 /* Headers */,
@@ -186,6 +203,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A41E574E0FC47B9F07F4EC4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-readium-opds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F34B7E481FA35B7900534FD3 /* Sources */ = {
@@ -325,6 +367,7 @@
 		};
 		F34B7E621FA35B7900534FD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1DA0F50280305C27BBFF1E6 /* Pods-readium-opds.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -341,7 +384,7 @@
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "readium-opds/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.readium.readium-opds";
 				PRODUCT_NAME = ReadiumOPDS;
@@ -356,6 +399,7 @@
 		};
 		F34B7E631FA35B7900534FD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E0AE8DE57E57EFE7401F08 /* Pods-readium-opds.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -372,7 +416,7 @@
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "readium-opds/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.readium.readium-opds";
 				PRODUCT_NAME = ReadiumOPDS;
