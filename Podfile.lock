@@ -1,34 +1,26 @@
 PODS:
   - Fuzi (3.1.2)
   - Minizip (1.0.0)
-  - R2Shared (2.0.0-alpha.1):
-    - Fuzi
-    - Minizip
+  - R2Shared (2.0.0-alpha.1-fix.3):
+    - Fuzi (= 3.1.2)
+    - Minizip (= 1.0.0)
 
 DEPENDENCIES:
   - Fuzi (= 3.1.2)
-  - R2Shared (from `https://github.com/readium/r2-shared-swift.git`, tag `2.0.0-alpha.1`)
+  - R2Shared (= 2.0.0-alpha.1-fix.3)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Fuzi
     - Minizip
-
-EXTERNAL SOURCES:
-  R2Shared:
-    :git: https://github.com/readium/r2-shared-swift.git
-    :tag: 2.0.0-alpha.1
-
-CHECKOUT OPTIONS:
-  R2Shared:
-    :git: https://github.com/readium/r2-shared-swift.git
-    :tag: 2.0.0-alpha.1
+  https://github.com/ubook-editora/pods-repository.git:
+    - R2Shared
 
 SPEC CHECKSUMS:
   Fuzi: dba7215e52fb39dd7b1a62f69ede1e30edff0ae1
   Minizip: 188cb3e39a1195c283ae03bf673d182596fefd0b
-  R2Shared: 2f69496d6b7eabde426519646930695bd2ab5b66
+  R2Shared: 7367eaf12fe7ede69505819aa91fbf30641a7dcf
 
-PODFILE CHECKSUM: 04ced1bc8771b061c2b8851004ae65e15af028f7
+PODFILE CHECKSUM: 578baf15e58df13e9cb02eb533a7f8f5da4d0e82
 
 COCOAPODS: 1.9.1
