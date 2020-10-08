@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
   s.source        = { :git => "https://github.com/ubook-editora/r2-opds-swift.git", :tag => "2.0.0-alpha.1-fix.3" }
   s.exclude_files = ["**/Info*.plist"]
   s.requires_arc  = true
-  s.resources     = ['readium-opds/Resources/**']
   s.source_files  = "readium-opds/**/*.{m,h,swift}"
   s.platform      = :ios
   s.ios.deployment_target = "10.0"
